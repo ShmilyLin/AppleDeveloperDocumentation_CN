@@ -1,0 +1,61 @@
+# urlProtocol(_:wasRedirectedTo:redirectResponse:)
+
+发送给URL加载系统，表示协议实现已被重定向。
+
+**需要**
+
+---
+## 声明
+
+```swift
+func urlProtocol(_ protocol: URLProtocol, 
+    wasRedirectedTo request: URLRequest, 
+           redirectResponse: URLResponse)
+```
+
+## 参数
+
+* **protocol**
+
+  发送消息的URL协议对象。
+
+* **request**
+
+  原始请求被重定向到的新请求。
+
+* **redirectResponse**
+
+  导致重定向的原始请求的响应。
+
+---
+## 其他内容
+
+### 协议方法
+
+#### ● [func urlProtocol(URLProtocol, cachedResponseIsValid: CachedURLResponse)](./urlProtocol-cachedResponseIsValid.md)**【需要】**
+
+发送给URL加载系统，表示这个缓存响应是有效的。
+
+#### ● [func urlProtocol(URLProtocol, didCancel: URLAuthenticationChallenge)](./urlProtocol-didCancel.md)**【需要】**
+
+发送给URL加载系统，表示验证质询已被取消。
+
+#### ● [func urlProtocol(URLProtocol, didFailWithError: Error)](./urlProtocol-didFailWithError.md)**【需要】**
+
+当加载请求由于错误而失败时发送。
+
+#### ● [func urlProtocol(URLProtocol, didLoad: Data)](./urlProtocol-didLoad.md)**【需要】**
+
+`NSURLProtocol`子类实例——`protocol`——在加载数据时将此消息发送给`[protocol client]`。
+
+#### ● [func urlProtocol(URLProtocol, didReceive: URLAuthenticationChallenge)](./urlProtocol-didReceive.md)**【需要】**
+
+发送给URL加载系统，表示已收到验证质询。
+
+#### ● [func urlProtocol(URLProtocol, didReceive: URLResponse, cacheStoragePolicy: URLCache.StoragePolicy)](./urlProtocol-didReceive-cacheStoragePolicy.md)**【需要】**
+
+发送给URL加载系统，表示协议实现已为请求创建响应对象。
+
+#### ● [func urlProtocolDidFinishLoading(URLProtocol)](。/urlProtocolDidFinishLoading.md)**【需要】**
+
+发送给URL加载系统，表示协议实现已完成加载。
