@@ -157,7 +157,7 @@
 - [InputMethodKit]
 - [IOBluetooth]
 - [IOBluetoothUI]
-- [IOKit]
+- [IOKit](./IOKit/)
 - [IOSurface]
 - [Kernel]
 - [LatentSemanticMapping]
