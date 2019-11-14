@@ -277,11 +277,13 @@ Called when an unwind segue transitions to a new view controller.
 
     消除由View Controller模态显示的View Controller。
 
-* [var modalPresentationStyle: UIModalPresentationStyle]()
-The presentation style for modally presented view controllers.
+* [var modalPresentationStyle: UIModalPresentationStyle](./1621355-modalpresentationstyle.md)
 
-* [enum UIModalPresentationStyle]()
-Modal presentation styles available when presenting view controllers.
+    模态呈现View Controller时的呈现样式。
+
+* [enum UIModalPresentationStyle](./UIModalPresentationStyle/)
+
+    呈现View Controller时可用的模态呈现样式。
 
 * [var modalTransitionStyle: UIModalTransitionStyle]()
 The transition style to use when presenting the view controller.
