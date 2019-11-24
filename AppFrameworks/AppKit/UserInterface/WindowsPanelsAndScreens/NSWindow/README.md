@@ -202,6 +202,10 @@ A Boolean value that indicates whether the window’s depth limit can change to 
 
 ### 管理窗口菜单
 
+* [var isExcludedFromWindowsMenu: Bool]()
+
+一个布尔值，指示该Window是否从应用程序的Windows菜单中排除。
+
 ### 管理光标矩形
 
 ### 管理标题栏
