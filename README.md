@@ -1,5 +1,6 @@
 # Apple Developer Documentation To Chinese
-苹果官方文档中文翻译
+
+自用的苹果官方文档中文翻译
 
 
 
@@ -10,9 +11,14 @@
 ## App Frameworks
 
 * [AppKit](./AppFrameworks/AppKit/)
+* [Bundle Resources]
 * [Foundation](./AppFrameworks/Foundation/)
-* [Objective-C]
-* [Swift Standard Library]
+* [Swift]
+* [SwiftUI](./AppFrameworks/SwiftUI/)
+* [TVML]
+* [TVMLKit]
+* [TVMLKit JS]
+* [TVUIKit]
 * [UIKit](./AppFrameworks/UIKit/)
 * [WatchKit]
 
@@ -35,7 +41,9 @@
 - [Model I/O]
 - [OpenGL ES]
 - [PDFKit]
+* [PencilKit]
 - [Quartz]
+* [RealityKit]
 - [ReplayKit]
 - [SceneKit]
 - [SpriteKit]
@@ -157,7 +165,7 @@
 - [InputMethodKit]
 - [IOBluetooth]
 - [IOBluetoothUI]
-- [IOKit](./IOKit/)
+- [IOKit](./System/IOKit/)
 - [IOSurface]
 - [Kernel]
 - [LatentSemanticMapping]
@@ -181,3 +189,183 @@
 - [Technical Notes]
 - [Technical Q&A]
 - [More]
+
+
+## 人机界面指南
+
+### macOS
+
+#### macOS
+
+* [Themes]
+* [Visual Index]
+
+#### App Architecture
+
+* [Full-Screen Mode]
+* [Loading]
+* [Modality]
+* [Onboarding]
+* [Preferences](./macOSHumanInterfaceGuidelines/AppArchitecture/Preferences)
+* [Restoring State]
+* [Security]
+
+#### User Interaction
+
+* [Authentication]
+* [Data Entry]
+* [Drag and Drop]
+* [File Handing]
+* [Help]
+* [Keyboard]
+* [Mouse and Trackpad]
+* [Providing User Feedback]
+* [Requesting Permission]
+
+#### System Capabilities
+
+* [Auto Save]
+* [Dock]
+* [Finder]
+* [Mssion Control]
+* [Notifications]
+* [Printing]
+* [Quick Look]
+* [Ratings and Reviews]
+* [Search and Spotlight]
+
+#### Visual Design
+
+* [Animation]
+* [Color]
+* [Dark Mode]
+* [Translucency](./macOSHumanInterfaceGuidelines/VisualDesign/Translucency.md)
+* [Typography]
+
+#### Icons and Images
+
+* [Image Size and Resolution]
+* [App Icon]
+* [Custom Icons]
+* [Multi-Item Drag Images]
+* [System Icons]
+
+#### Windows and Views
+
+* [Window Anatomy]
+* [Alerts]
+* [Boxes]
+* [Column Views]
+* [Dialogs]
+* [Image Views]
+* [Outline Views]
+* [Panels]
+* [Popovers](./macOSHumanInterfaceGuidelines/WindowsAndViews/Popovers.md)
+* [Scroll Views]
+* [Sheets]
+* [SideBars]
+* [Split Views]
+* [Tab Views]
+* [Table Views]
+* [Toolbars]
+* [Web Views]
+* [Drawers*]
+* [Placards*]
+
+#### Menus
+
+* [Menu Anatomy]
+* [Contextual Menus]
+* [Dock Menus]
+* [menu Bar Menus](./macOSHumanInterfaceGuidelines/Menus/MenubarMenus.md)
+
+#### Buttons
+
+* [Checkboxes]
+* [Disclosure Controls]
+* [Gradient Buttons]
+* [Help Buttons]
+* [Image Buttons]
+* [Pop-up Buttons]
+* [Pull-down Buttons]
+* [Push Buttons]
+* [Radio Buttons]
+* [Scope Buttons]
+* [Switches]
+* [Bevel Buttons*]
+* [Round Buttons*]
+
+#### Fields and Labels
+
+* [Combo Boxes]
+* [labels]
+* [Search Fields]
+* [Text Fields]
+* [Token Fields]
+
+#### Selectors
+
+* [Color Wells]
+* [Date Pickers]
+* [Image Wells]
+* [Path Controls]
+* [Segmented Controls]
+* [Sliders]
+* [Steppers]
+
+#### Indicators
+
+* [Level Indicators]
+* [Progress Indicators]
+
+#### Touch Bar
+
+* [Touch Bar Overview]
+* [Visual Design]
+* [Icons and Images]
+* [Controls and Views]
+
+#### Extensions
+
+* [Action Extensions]
+* [Automator Actions]
+* [Dashboard Widgets]
+* [Finder Sync Extensions]
+* [Menu Bar Extras]
+* [Notification Center Widgets]
+* [Services]
+* [Share Extensions]
+
+## Documentation Archive
+
+### Platform
+
+* [iOS]
+* [macOS]
+* [watchOS]
+* [tvOS]
+
+### Resource Types
+
+* []
+
+### Topics
+
+### Technologies
+
+#### Cocoa Layer
+
+#### Web Services
+
+#### Media Layer
+
+#### Core Services Layer
+
+#### Core OS Layer
+
+#### Kernel & Driver Layer
+
+* [IOBluetooth]
+* [IOKit]
+* [ImageCaptureCore]
+* [Kernel]

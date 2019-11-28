@@ -4,7 +4,7 @@
 
 ## 概述
 
-Foundation框架为应用程序和其他框架提供了基础功能，包括数据存储和数据持久化，文本处理，日期和时间计算，排序和筛选以及联网功能。由Foundation定义的类，协议和数据类型在整个macOS，iOS，watchOS和tvOS SDK中通用。
+Foundation框架为App和其他框架提供了基础功能，包括数据存储和数据持久化，文本处理，日期和时间计算，排序和筛选以及联网功能。由Foundation定义的类，协议和数据类型在整个macOS，iOS，watchOS和tvOS SDK中通用。
 
 ## 主题
 

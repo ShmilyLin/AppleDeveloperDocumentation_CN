@@ -101,3 +101,28 @@ func toolbar(
 
 ### 添加Touch Bar支持
 
+此示例实现了[Touch Bar]()，可以与Toolbar一起使用。你在窗口Toolbar中看到的就是你在Touch Bar中看到的。本示例使用Touch Bar以与Toolbar相同的方式设置字体样式和大小。
+
+重写`makeTouchBar()`来创建[NSTouchBar]()。
+
+```swift
+override func makeTouchBar() -> NSTouchBar? {
+    let touchBar = NSTouchBar()
+    touchBar.delegate = self
+    touchBar.customizationIdentifier = .touchBar
+    touchBar.defaultItemIdentifiers = [.fontStyle, .popover, NSTouchBarItem.Identifier.otherItemsProxy]
+    touchBar.customizationAllowedItemIdentifiers = [.fontStyle, .popover]
+    
+    return touchBar
+}
+```
+
+在MacBook Pro上测试Touch Bar。但是，如果你的设备不支持这样做，则可以通过选择“Window”>“Show Touch Bar”来使用Xcode的Touch Bar模拟器。
+
+### 自定义Touch Bar
+
+用户通过从“View”菜单中选择“Customize Touch Bar”来自定义Touch Bar。要将此菜单项添加到主菜单，请执行以下操作：
+
+```swift
+NSApplication.shared.isAutomaticCustomizeTouchBarMenuItemEnabled = true
+```
