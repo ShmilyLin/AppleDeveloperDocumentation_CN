@@ -18,6 +18,8 @@
 
 ### Alert
 
+<embed src="./Alerts.svg" type="image/svg+xml" /> 
+
 ![](./Alerts.svg)
 
 显示模态消息、错误或警告。
