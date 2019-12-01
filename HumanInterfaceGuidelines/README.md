@@ -4,74 +4,74 @@
 
 ### macOS
 
-* [Themes](./macOS/macOS/Themes.md)
-* [Visual Index](./macOS/macOS/VisualIndex.md)
+* [主题](./macOS/macOS/Themes.md)
+* [视觉索引](./macOS/macOS/VisualIndex.md)
 
-### App Architecture
+### 应用架构
 
-* [Full-Screen Mode](./macOS/AppArchitecture/FullScreenMode.md)
-* [Loading](./macOS/AppArchitecture/Loading.md)
-* [Modality](./macOS/AppArchitecture/Modality.md)
+* [全屏模式](./macOS/AppArchitecture/FullScreenMode.md)
+* [加载中](./macOS/AppArchitecture/Loading.md)
+* [模态](./macOS/AppArchitecture/Modality.md)
 * [Onboarding](./macOS/AppArchitecture/Onboarding.md)
-* [Preferences](./macOS/AppArchitecture/Preferences.md)
-* [Restoring State](./macOS/AppArchitecture/RestoringState.md)
-* [Security](./macOS/AppArchitecture/)
+* [偏好设置](./macOS/AppArchitecture/Preferences.md)
+* [恢复状态](./macOS/AppArchitecture/RestoringState.md)
+* [安全]](./macOS/AppArchitecture/Security.md)
 
-### User Interaction
+### 用户互动
 
-* [Authentication]
-* [Data Entry]
-* [Drag and Drop]
-* [File Handing]
-* [Help]
-* [Keyboard]
-* [Mouse and Trackpad]
-* [Providing User Feedback]
-* [Requesting Permission]
+* [身份验证](./macOS/UserInteraction/Authentication.md)
+* [数据输入](./macOS/UserInteraction/DataEntry.md)
+* [拖放](./macOS/UserInteraction/DragAndDrop.md)
+* [文件处理](./macOS/UserInteraction/FileHandling.md)
+* [帮助](./macOS/UserInteraction/Help.md)
+* [键盘](./macOS/UserInteraction/Keyboard.md)
+* [鼠标和触控板](./macOS/UserInteraction/MouseAndTrackpad.md)
+* [提供用户反馈](./macOS/UserInteraction/ProvidingUserFeedback.md)
+* [请求权限](./macOS/UserInteraction/RequestingPermission.md)
 
-### System Capabilities
+### 系统能力
 
-* [Auto Save]
-* [Dock]
-* [Finder]
-* [Mssion Control]
-* [Notifications]
-* [Printing]
-* [Quick Look]
-* [Ratings and Reviews]
-* [Search and Spotlight]
+* [自动保存](./macOS/SystemCapabilities/AutoSave.md)
+* [Dock](./macOS/SystemCapabilities/Dock.md)
+* [Finder](./macOS/SystemCapabilities/Finder.md)
+* [任务控制](./macOS/SystemCapabilities/MssionControl.md)
+* [通知](./macOS/SystemCapabilities/Notifications.md)
+* [打印](./macOS/SystemCapabilities/Printing.md)
+* [快速查看](./macOS/SystemCapabilication/QuickLook.md)
+* [评分和评论](./macOS/SystemCapabilities/RatingAndReviews.md)
+* [搜索和聚焦](./macOS/SystemCapabilities/SearchAndSpotlight.md)
 
-### Visual Design
+### 视觉设计
 
-* [Animation]
-* [Color]
-* [Dark Mode]
-* [Translucency](./macOS/VisualDesign/Translucency.md)
-* [Typography]
+* [动画](./macOS/VisualDesign/Animation.md)
+* [色彩](./macOS/VisualDesign/Color.md)
+* [深色模式](./macOS/VisualDesign/DarkMode.md)
+* [半透明](./macOS/VisualDesign/Translucency.md)
+* [版式](./macOS/Visual/Design/Typography.md)
 
-### Icons and Images
+### 图表和图片
 
-* [Image Size and Resolution]
-* [App Icon]
-* [Custom Icons]
-* [Multi-Item Drag Images]
-* [System Icons]
+* [图像尺寸和分辨率](./macOS/IconsAndImages/ImageSizeAndResolution.md)
+* [应用图标](./macOS/IconsAndImages/AppIcon.md)
+* [自定义图标](./macOS/IconsAndImages/CustomIcons.md)
+* [多项目拖动图像](./macOS/IconsAndImages/MultiItemDragImages.md)
+* [系统图标](./macOS/IconsAndImages/SystemIcons.md)
 
-### Windows and Views
+### 窗口和视图
 
-* [Window Anatomy]
-* [Alerts]
-* [Boxes]
+* [窗口刨析](./macOS/WindowsAndViews/WindowAnatomy.md)
+* [Alerts](./macOS/WindowsAndViews/Alerts.md)
+* [盒子](./macOS/WindowsAndViews/Boxes.md)
 * [Column Views]
 * [Dialogs]
 * [Image Views]
 * [Outline Views]
 * [Panels]
-* [Popovers](./macOS/WindowsAndViews/Popovers.md)
+* [弹出式窗口](./macOS/WindowsAndViews/Popovers.md)
 * [Scroll Views]
 * [Sheets]
 * [SideBars]
-* [Split Views]
+* [分隔视图](./macOS/WindowsAndViews/SplitViews.md)
 * [Tab Views]
 * [Table Views]
 * [Toolbars]
