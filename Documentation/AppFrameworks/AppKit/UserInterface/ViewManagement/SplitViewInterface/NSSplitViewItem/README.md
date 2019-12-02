@@ -21,7 +21,12 @@ class NSSplitViewItem : NSObject
 * [var automaticMaximumThickness: CGFloat]()
 * [var preferredThicknessFraction: CGFloat]()
 * [var minimumThickness: CGFloat]()
+
+最小厚度
+
 * [var maximumThickness: CGFloat]()
+
+最大厚度
 
 ### 获取`Auto Layout`行为
 
@@ -33,7 +38,13 @@ class NSSplitViewItem : NSObject
 * [var behavior: NSSplitViewItem.Behavior]()
 * [enum NSSplitViewItem.Behavior]()
 * [var canCollapse: Bool]()
+
+是否可以折叠
+
 * [var isCollapsed: Bool]()
+
+是否被折叠
+
 * [var collapseBehavior: NSSplitViewItem.CollapseBehavior]()
 * [enum NSSplitViewItem.CollapseBehavior]()
 * [var isSpringLoaded: Bool]()
