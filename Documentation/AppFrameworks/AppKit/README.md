@@ -20,7 +20,7 @@ AppKit包含一个macOS应用中所有你需要实现的用户界面的对象—
 
 使用文档管理应用程序的数据，并将其存储到本地文件系统或iCloud中。
 
-* [Cocoa Bindings]()
+* [Cocoa Bindings](./CocoaBindings/)
 
 使用Cocoa Bindings自动将数据模型与应用程序界面同步。
 

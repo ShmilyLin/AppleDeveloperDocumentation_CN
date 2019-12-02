@@ -2,85 +2,75 @@
 
 在屏幕上显示你的内容并定义这些内容的交互。
 
-
-
-## 讲解
-
-
+## 主题
 
 ### 第一步
 
-
-
-* **[class NSView]**
+* [class NSView]
 
 一个应用中绘制、打印和事件处理的基础。
 
-* **[class NSControl]**
+* [class NSControl]
 
 控件的基本行为的定义，通过使用`target-action`设计模式将相关的事件通知给你的应用的专用视图。
 
-* **[class NSCell]**
+* [class NSCell]
 
 一个用于在一个视图对象上显示文本或图片的结构，并且不需要一个完整的`NSView`子类的开销。
 
-* **[class NSActionCell]**
+* [class NSActionCell]
 
 控件内的一个活动区域。
-
-
 
 ### 容器视图
 
 使用容器视图排列你的界面中的视图，并且使得这些视图之间更容易联系。
 
-* **[网格视图]**
+* [网格视图]
 
 在一个灵活的网格中排列视图，并处理和这些视图相关的布局。
 
-* **[class NSSplitView](./ContainerViews/NSSplitView.md)**
+* [class NSSplitView](./ContainerViews/NSSplitView.md)
 
 在一个水平或竖直的线性堆中排列两个或多个视图的视图。
 
-* **[class NSStackView]**
+* [class NSStackView]
 
 水平或垂直的排列一组视图的视图，并且当窗口大小改变的时候自动更新它们的位置和大小。
 
-* **[class NSTabView]**
+* [class NSTabView]
 
 一个在同一时刻只展示一个页面的多页面界面。
 
-* **[Scroll View]**
+* [Scroll View]
 
 因为导航内容过大而无法在有效的控件内展示，而提供的一个可以滚动的界面。
-
-
 
 ### 内容视图
 
 使用内容视图来组织和显示你应用的数据。
 
-* **[Browser View]**
+* [Browser View]
 
 为展示和导航层次信息而提供一个基于列的界面。
 
-* **[Collection View](./ContentViews/CollectionView/CollectionView.md)**
+* [Collection View](./ContentViews/CollectionView/CollectionView.md)
 
 在一个高度可配置的排列中展示一个或多个子视图。
 
-* **[Outline View](./ContentViews/OutlineView/OutlineView.md)**
+* [Outline View](./ContentViews/OutlineView/OutlineView.md)
 
 将层级数据以列表的形式展示出来，每一个层级相对于前一个层级都有一定的缩进距离。
 
-* **[class NSOpenGLView]**
+* [class NSOpenGLView]
 
 在一个视图中展示OpenGL内容的视图。
 
-* **[Table View](./ContentViews/TableView/TableView.md)**
+* [Table View](./ContentViews/TableView/TableView.md)
 
 在行和列中显示自定义数据。
 
-* **[class NSTextView]**
+* [class NSTextView]
 
 A view that draws text and handles user interactions with that text. 
 
@@ -90,59 +80,59 @@ A view that draws text and handles user interactions with that text.
 
 Use controls to handle specific types of user interactions. Controls are specialized views that use the target-action design pattern to notify your app of interactions with their content.
 
-* **[class NSButton]**
+* [class NSButton](./Controls/NSButton/)
 
-A control that defines an area on the screen that can be used to trigger actions. 
+定义屏幕上可用于触发动作的区域的控件。
 
-* **[class NSColorWell]**
+* [class NSColorWell]
 
 A control that displays a color value and lets the user change that color value. 
 
-* **[Date Picker]**
+* [Date Picker]
 
 Display a calendar date and provide controls for editing the date value. 
 
-* **[class NSImageView]**
+* [class NSImageView]
 
 A display of image data from an [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) object in a frame. 
 
-* * **[**[class NSLevelIndicator]**
+* [class NSLevelIndicator]
 
 A visual representation of a level or quantity, using discrete values.
 
-* **[Path Control]**
+* [Path Control]
 
 A display of a file system path or virtual path information.
 
-* **[class NSPopUpButton]**
+* [class NSPopUpButton]
 
 A display of a single item from a list of items, and provide an interface for selecting items from the list.  
 
-* **[class NSProgressIndicator]**
+* [class NSProgressIndicator]
 
 An interface that provides visual feedback to the user about the status of an ongoing task. 
 
-* **[class NSRuleEditor]**
+* [class NSRuleEditor]
 
 An interface for configuring a rule-based list of options. 
 
-* **[class NSPredicateEditor]**
+* [class NSPredicateEditor]
 
 A defined set of rules that allows the editing of predicate objects.
 
-* **[Search Field]**
+* [Search Field]
 
 Provide a text field that is optimized for text-based search interfaces.  
 
-* **[class NSSegmentedControl]**
+* [class NSSegmentedControl]
 
 Display one or more buttons in a single horizontal group. 
 
-* **[Slider]**
+* [Slider]
 
 Display a range of values from which the user selects a single value. 
 
-* **[class NSStepper]**
+* [class NSStepper]
 
 An interface with up and down arrow buttons for incrementing or decrementing a value.
 

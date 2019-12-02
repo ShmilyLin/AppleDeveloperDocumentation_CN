@@ -16,8 +16,9 @@
 
 ### 树型数据
 
-* [Navigating Hierarchical Data Using Outline and Split Views]()
-Build a structured user interface that simplifies navigation in your app.
+* [使用`Outline View`和`Split View`导航分层数据](./navigating_hierarchical_data_using_outline_and_split_views.md)
+
+构建结构化的用户界面，以简化App中的导航。
 
 * [class NSTreeController]()
 A bindings-compatible controller that manages a tree of objects.

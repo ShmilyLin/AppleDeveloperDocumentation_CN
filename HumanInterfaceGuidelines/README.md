@@ -86,7 +86,7 @@
 * [Dock Menus]
 * [menu Bar Menus](./macOS/Menus/MenubarMenus.md)
 
-### Buttons
+### 按钮
 
 * [Checkboxes]
 * [Disclosure Controls]
@@ -95,7 +95,7 @@
 * [Image Buttons]
 * [Pop-up Buttons]
 * [Pull-down Buttons]
-* [Push Buttons]
+* [Push Buttons](./macOS/Buttons/PushButtons.md)
 * [Radio Buttons]
 * [Scope Buttons]
 * [Switches]
