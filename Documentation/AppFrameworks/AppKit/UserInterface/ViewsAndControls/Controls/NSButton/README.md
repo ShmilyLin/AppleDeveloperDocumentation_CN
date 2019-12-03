@@ -21,3 +21,54 @@ class NSButton : NSControl
 对于大多数类型的`按钮`，`按钮`的值与其状态相匹配——值为`1`（表示打开），`0`（表示关闭）或`-1`（表示混合）。对于`压敏按钮`，该`按钮`的值改为指示压力水平。
 
 `NSButton`和[NSMatrix]()都提供了一个控件视图，该视图显示了一个`NSButtonCell`对象。但是，尽管`Matrix`要求你直接访问`Button Cell`对象，但是大多数`Button`类的方法替代了相同声明的`Button Cell`方法。换句话说，`Button`方法的实现为你调用了相应的`Button Cell`的方法，从而使你不必考虑`Button Cell`的存在。唯一没有覆盖的`Button Cell`的方法是与用于显示等效键的字体以及用于突出显示或显示`Button`状态的特定方法有关。
+
+## 主题
+
+### 创建标准按钮
+
+* [init(checkboxWithTitle: String, target: Any?, action: Selector?)]()
+* [init(image: NSImage, target: Any?, action: Selector?)]()
+* [init(radioButtonWithTitle: String, target: Any?, action: Selector?)]()
+* [init(title: String, image: NSImage, target: Any?, action: Selector?)]()
+* [init(title: String, target: Any?, action: Selector?)]()
+
+### 配置Cell
+
+* [class NSButtonCell]()
+
+定义用户界面的`Button`或`View`的其他可单击区域的对象。
+
+### 配置`Button`
+
+* [func setButtonType(NSButton.ButtonType)]()
+
+设置`Button`的类型，该类型会影响`Button`的用户界面和单击行为。
+
+* [func getPeriodicDelay(UnsafeMutablePointer<Float>, interval: UnsafeMutablePointer<Float>)]()
+Returns by reference the delay and interval periods for a continuous button.
+
+* [func setPeriodicDelay(Float, interval: Float)]()
+Sets the message delay and interval periods for a continuous button.
+
+* [var alternateTitle: String]()
+The title that the button displays when the button is in an on state.
+
+* [var attributedTitle: NSAttributedString]()
+The title that the button displays in an off state, as an attributed string.
+
+* [var attributedAlternateTitle: NSAttributedString]()
+The title that the button displays as an attributed string when the button is in an on state.
+
+* [var title: String]()
+The title displayed on the button when it’s in an off state.
+
+* [var sound: NSSound?]()
+The sound that plays when the user clicks the button.
+
+* [var isSpringLoaded: Bool]()
+A Boolean value that indicates whether spring loading is enabled for the button.
+
+* [var maxAcceleratorLevel: Int]()
+An integer value indicating the maximum pressure level for a button of type 
+NSMultiLevelAcceleratorButton
+.
