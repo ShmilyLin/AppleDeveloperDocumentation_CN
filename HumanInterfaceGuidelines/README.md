@@ -66,7 +66,7 @@
 * [Dialogs]
 * [Image Views]
 * [Outline Views]
-* [Panels]
+* [面板](./macOS/WindowsAndViews/Panels.md)
 * [弹出式窗口](./macOS/WindowsAndViews/Popovers.md)
 * [Scroll Views]
 * [Sheets]
