@@ -152,9 +152,41 @@ A Boolean value that indicates whether the window’s depth limit can change to 
 
 ### 获取布局信息
 
-### 管理多个窗口
+### 管理窗口
 
-### 管理遮罩
+### 管理`Sheet`
+
+* [var attachedSheet: NSWindow?](./1419467-attachedsheet.md)
+
+粘贴到`窗口`的`Sheet`。
+
+* [var isSheet: Bool](./1419364-issheet.md)
+
+一个布尔值，指示`窗口`是否曾经作为`模态Sheet`运行
+
+* [func beginSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](./1419653-beginsheet.md)
+
+开始文档模式的会话并呈现（或呈现队列）`Sheet`。
+
+* [func beginCriticalSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](./1419198-begincriticalsheet.md)
+
+启动文档模式会话并显示指定的`Critical Sheet`。
+
+* [func endSheet(NSWindow)](./1419318-endsheet.md)
+
+结束文档模式会话并关闭指定的`Sheet`。
+
+* [func endSheet(NSWindow, returnCode: NSApplication.ModalResponse)](./1419497-endsheet.md)
+
+结束文档模式会话并关闭指定的`Sheet`。
+
+* [var sheetParent: NSWindow?](./1419052-sheetparent.md)
+
+`Sheet`连接到的`窗口`。
+
+* [var sheets: [NSWindow]](./1419765-sheets.md)
+
+当前连接到`窗口`的`Sheet`数组。
 
 ### 窗口大小
 
@@ -218,13 +250,13 @@ A Boolean value that indicates whether the window’s depth limit can change to 
 
     返回窗口视图层次结构中给定窗口按钮类型的窗口按钮。
 
-* [var showsToolbarButton: Bool]()
+* [var showsToolbarButton: Bool](./1419196-showstoolbarbutton.md)
 
-    一个布尔值，指示当前是否显示工具栏控制按钮。
+    一个布尔值，指示当前是否显示`工具栏`控制按钮。
 
 * [var titlebarAppearsTransparent: Bool](./1419167-titlebarappearstransparent.md)
 
-    一个布尔值，指示标题栏是否绘制其背景。
+    一个布尔值，指示`标题栏`是否绘制其背景。
 
 ### 管理工具栏标题栏区域
 

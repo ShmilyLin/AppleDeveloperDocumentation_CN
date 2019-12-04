@@ -63,13 +63,13 @@
 * [Alerts](./macOS/WindowsAndViews/Alerts.md)
 * [盒子](./macOS/WindowsAndViews/Boxes.md)
 * [Column Views]
-* [Dialogs]
+* [对话框](./macOS/WindowsAndViews/Dialogs.md)
 * [Image Views]
 * [Outline Views]
 * [面板](./macOS/WindowsAndViews/Panels.md)
 * [弹出式窗口](./macOS/WindowsAndViews/Popovers.md)
 * [Scroll Views]
-* [Sheets]
+* [Sheet](./macOS/WindowsAndViews/Sheets.md)
 * [SideBars]
 * [分隔视图](./macOS/WindowsAndViews/SplitViews.md)
 * [Tab Views]
