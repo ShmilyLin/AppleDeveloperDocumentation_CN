@@ -28,29 +28,29 @@ class NSSplitViewController : NSViewController
 
 * [var splitView: NSSplitView]()
 
-由`Split View Controller`管理的`Split View`。
+    由`Split View Controller`管理的`Split View`。
 
 * [func splitViewItem(for: NSViewController) -> NSSplitViewItem?]()
 
-根据给定的`Child View Controller`返回`Split View Controller`中的相应`Split View Item`。
+    根据给定的`Child View Controller`返回`Split View Controller`中的相应`Split View Item`。
 
 * [var splitViewItems: [NSSplitViewItem]]()
 
-与`Split View Controller`的`Child View Controller`相对应的`Split View Item`的数组。
+    与`Split View Controller`的`Child View Controller`相对应的`Split View Item`的数组。
 
 ### 修改`Split View Controller`
 
 * [func addSplitViewItem(NSSplitViewItem)]()
 
-将`Split View Item`添加到`Split View Controller`的`splitViewItems`数组的末尾。
+    将`Split View Item`添加到`Split View Controller`的`splitViewItems`数组的末尾。
 
 * [func insertSplitViewItem(NSSplitViewItem, at: Int)]()
 
-将`Split View Item`添加到`Split View Controller`的`splitViewItems`数组中的指定索引位置。
+    将`Split View Item`添加到`Split View Controller`的`splitViewItems`数组中的指定索引位置。
 
 * [func removeSplitViewItem(NSSplitViewItem)]()
 
-从`Split View Controller`中删除指定的`Split View Item`。
+    从`Split View Controller`中删除指定的`Split View Item`。
 
 ### 实例属性
 

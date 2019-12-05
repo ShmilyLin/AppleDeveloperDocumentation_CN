@@ -20,17 +20,17 @@ class NSSplitView : NSView
 
 * [var delegate: NSSplitViewDelegate?]()
 
-`Split View`的`Delegate`。
+    `Split View`的`Delegate`。
 
-* [protocol NSSplitViewDelegate]()
+* [protocol NSSplitViewDelegate](./NSSplitViewDelegate/)
 
-`NSSplitViewDelegate`协议定义[NSSplitView]的`Delegate`可选实现的方法。
+    `NSSplitViewDelegate`协议定义[NSSplitView]的`Delegate`可选实现的方法。
 
 ### 管理`Split View Item`
 
 * [class NSSplitViewItem]()
 
-`Split View Controller`中的一个`Item`。
+    `Split View Controller`中的一个`Item`。
 
 ### 安排`Subview`
 
@@ -44,49 +44,49 @@ class NSSplitView : NSView
 
 * [func adjustSubviews()]()
 
-调整`Split View`的`Subview`的大小，以便它们（加上分隔线）填充`Split View`。
+    调整`Split View`的`Subview`的大小，以便它们（加上分隔线）填充`Split View`。
 
 * [func isSubviewCollapsed(NSView) -> Bool]()
 
-返回指定的`View`是否折叠。
+    返回指定的`View`是否折叠。
 
 * [func holdingPriorityForSubview(at: Int) -> NSLayoutConstraint.Priority]()
 
-调整大小时，返回`Subview`的宽度或高度的优先级。
+    调整大小时，返回`Subview`的宽度或高度的优先级。
 
 * [func setHoldingPriority(NSLayoutConstraint.Priority, forSubviewAt: Int)]()
 
-设置`Split View`的`Subview`保持其宽度或高度的优先级。
+    设置`Split View`的`Subview`保持其宽度或高度的优先级。
 
 ### 管理分隔线方向
 
 * [var isVertical: Bool]()
 
-`Split View`的分隔线的几何方向，如果为`true`，则是垂直分隔线和并排视图的样式。
+    `Split View`的分隔线的几何方向，如果为`true`，则是垂直分隔线和并排视图的样式。
 
 ### 配置和绘制分隔线
 
 * [var dividerStyle: NSSplitView.DividerStyle]()
 
-`View`之间绘制的分隔线样式。
+    `View`之间绘制的分隔线样式。
 
 * [var dividerColor: NSColor]()
 
-`Split View`在`Subview`之间绘制的分隔线的颜色。
+    `Split View`在`Subview`之间绘制的分隔线的颜色。
 
 * [var dividerThickness: CGFloat]()
 
-`Split View`的分隔线的厚度。
+    `Split View`的分隔线的厚度。
 
 * [func drawDivider(in: NSRect)]()
 
-在接收者的两个`Subview`之间绘制分隔线。
+    在接收者的两个`Subview`之间绘制分隔线。
 
 ### 保存`Subview`的位置
 
 * [var autosaveName: NSSplitView.AutosaveName?]()
 
-自动保存`Split View`的分隔符配置的名称。
+    自动保存`Split View`的分隔符配置的名称。
 
 * [typealias NSSplitView.AutosaveName]()
 
@@ -94,30 +94,30 @@ class NSSplitView : NSView
 
 * [func minPossiblePositionOfDivider(at: Int) -> CGFloat]()
 
-返回分隔符在指定索引处的最小可能位置。
+    返回分隔符在指定索引处的最小可能位置。
 
 * [func maxPossiblePositionOfDivider(at: Int) -> CGFloat]()
 
-返回分隔符在指定索引处的最大可能位置。
+    返回分隔符在指定索引处的最大可能位置。
 
 * [func setPosition(CGFloat, ofDividerAt: Int)]()
 
-设置分隔线在指定索引处的位置。
+    设置分隔线在指定索引处的位置。
 
 ### 常量
 
 * [enum NSSplitView.DividerStyle]()
 
-这些常量指定[NSSplitView]()可以使用的分隔符样式。
+    这些常量指定[NSSplitView]()可以使用的分隔符样式。
 
 ### 通知
 
 `NSSplitView`声明并发布以下通知。此外，它还发布由其`Superclass`——`NSView`声明的通知。有关更多信息，请参见[NSView]()类规范。
 
-* [class let didResizeSubviewsNotification: NSNotification.Name]()
+* [class let didResizeSubviewsNotification: NSNotification.Name](./1455294-didresizesubviewsnotification.md)
 
-在`NSSplitView`更改其部分或全部`Subview`的大小后发布。
+    在`NSSplitView`更改其部分或全部`Subview`的大小后发布。
 
 * [class let willResizeSubviewsNotification: NSNotification.Name]()
 
-在`NSSplitView`更改其部分或全部`Subview`的大小前发布。
+    在`NSSplitView`更改其部分或全部`Subview`的大小前发布。
