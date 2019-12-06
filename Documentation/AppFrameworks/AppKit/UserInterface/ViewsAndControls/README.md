@@ -4,23 +4,23 @@
 
 ## 主题
 
-### 第一步
+### 基本原理
 
-* [class NSView]
+* [class NSView](./ViewFundamentals/NSView/)
 
-一个应用中绘制、打印和事件处理的基础。
+一个App中绘制、打印和事件处理的基础。
 
-* [class NSControl]
+* [class NSControl](./ViewFundamentals/NSControl/)
 
-控件的基本行为的定义，通过使用`target-action`设计模式将相关的事件通知给你的应用的专用视图。
+`Control`的基本行为的定义，这些`Control`是一种特殊的`View`，可通过使用`Target-Action`设计模式将相关事件通知给你的App。
 
-* [class NSCell]
+* [class NSCell](./ViewFundamentals/NSCell/)
 
-一个用于在一个视图对象上显示文本或图片的结构，并且不需要一个完整的`NSView`子类的开销。
+一个用于在一个`View`对象上显示文本或图片的结构，并且不需要一个完整的`NSView`子类的开销。
 
-* [class NSActionCell]
+* [class NSActionCell](./ViewFundamentals/NSActionCell/)
 
-控件内的一个活动区域。
+`Control`内的一个活动区域。
 
 ### 容器视图
 
