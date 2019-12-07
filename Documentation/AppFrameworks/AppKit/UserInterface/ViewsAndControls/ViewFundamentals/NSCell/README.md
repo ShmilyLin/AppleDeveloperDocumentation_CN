@@ -253,20 +253,25 @@ The object represented by the cell.
 
     开始跟踪接收者中的鼠标事件。
 
-* [func continueTracking(last: NSPoint, current: NSPoint, in: NSView) -> Bool]()
-Returns a Boolean value that indicates whether mouse tracking should continue in the receiving cell.
+* [func continueTracking(last: NSPoint, current: NSPoint, in: NSView) -> Bool](./1535599-continuetracking.md)
 
-* [func stopTracking(last: NSPoint, current: NSPoint, in: NSView, mouseIsUp: Bool)]()
-Stops tracking mouse events within the receiver.
+    返回一个布尔值，该值指示鼠标跟踪是否应在接收`Cell`中持续进行。
 
-* [var mouseDownFlags: Int]()
-The modifier flags for the last (left) mouse-down event.
+* [func stopTracking(last: NSPoint, current: NSPoint, in: NSView, mouseIsUp: Bool)](./1534650-stoptracking.md)
 
-* [class var prefersTrackingUntilMouseUp: Bool]()
-Returns a Boolean value that indicates whether tracking stops when the cursor leaves the cell.
+    停止接收者中的鼠标跟踪事件。
 
-* [func getPeriodicDelay(UnsafeMutablePointer<Float>, interval: UnsafeMutablePointer<Float>)]()
-Returns the initial delay and repeat values for continuous sending of action messages to target objects.
+* [var mouseDownFlags: Int](./1527798-mousedownflags.md)
+
+    最后一个鼠标按下（左键）事件的修饰符标志。
+
+* [class var prefersTrackingUntilMouseUp: Bool](./1530790-preferstrackinguntilmouseup.md)
+
+    返回一个布尔值，该值指示当光标离开`Cell`时跟踪是否停止。
+
+* [func getPeriodicDelay(UnsafeMutablePointer<Float>, interval: UnsafeMutablePointer<Float>)](./1535611-getperiodicdelay.md)
+
+    返回初始延迟和重复值，以将动作消息连续发送到`Target`对象。
 
 ### 命中测试
 
@@ -304,37 +309,46 @@ The type of focus ring to use with the associated view.
 
 ### 确定`Cell`大小
 
-* [func calcDrawInfo(NSRect)]()
-Recalculates the cell geometry.
+* [func calcDrawInfo(NSRect)](./1533752-calcdrawinfo.md)
 
-* [var cellSize: NSSize]()
-The minimum size needed to display the cell.
+    重新计算`Cell`的几何形状。
 
-* [func cellSize(forBounds: NSRect) -> NSSize]()
-Returns the minimum size needed to display the receiver, constraining it to the specified rectangle.
+* [var cellSize: NSSize](./1532056-cellsize.md)
 
-* [func drawingRect(forBounds: NSRect) -> NSRect]()
-Returns the rectangle within which the receiver draws itself
+    显示`Cell`所需的最小尺寸。
 
-* [func imageRect(forBounds: NSRect) -> NSRect]()
-Returns the rectangle in which the receiver draws its image.
+* [func cellSize(forBounds: NSRect) -> NSSize](./1524792-cellsize.md)
 
-* [func titleRect(forBounds: NSRect) -> NSRect]()
-Returns the rectangle in which the receiver draws its title text.
+    返回显示接收器所需的最小尺寸，并将其限制为指定的矩形。
 
-* [var controlSize: NSControl.ControlSize]()
-The size of the cell.
+* [func drawingRect(forBounds: NSRect) -> NSRect](./1526266-drawingrect.md)
+
+    返回接收方绘制自身的矩形。
+
+* [func imageRect(forBounds: NSRect) -> NSRect](./1533408-imagerect.md)
+
+    返回接收方在其中绘制其图像的矩形。
+
+* [func titleRect(forBounds: NSRect) -> NSRect](./1531281-titlerect.md)
+
+    返回接收方在其中绘制其文本的矩形。
+
+* [var controlSize: NSControl.ControlSize](./1530780-controlsize.md)
+
+    `Cell`的大小。
 
 ### 绘图和高亮显示
 
-* [func draw(withFrame: NSRect, in: NSView)]()
-Draws the receiver’s border and then draws the interior of the cell.
+* [func draw(withFrame: NSRect, in: NSView)](./1535830-draw.md)
+
+    绘制接收者的边框，然后绘制`Cell`的内部。
 
 * [func highlightColor(withFrame: NSRect, in: NSView) -> NSColor?]()
 Returns the color the receiver uses when drawing the selection highlight.
 
-* [func drawInterior(withFrame: NSRect, in: NSView)]()
-Draws the interior portion of the receiver, which includes the image or text portion but does not include the border.
+* [func drawInterior(withFrame: NSRect, in: NSView)](./1531274-drawinterior.md)
+
+    绘制接收器的内部，其中包括图像或文本部分，但不包括边框。
 
 * [var controlView: NSView?]()
 The view associated with the cell.
@@ -370,16 +384,19 @@ A Boolean value indicating whether the cell restricts layout and rendering of te
 
 ### 管理扩展框架
 
-* [func expansionFrame(withFrame: NSRect, in: NSView) -> NSRect]()
-Returns the expansion cell frame for the receiver.
+* [func expansionFrame(withFrame: NSRect, in: NSView) -> NSRect](./1526362-expansionframe.md)
 
-* [func draw(withExpansionFrame: NSRect, in: NSView)]()
-Instructs the receiver to draw in an expansion frame.
+    返回接收器的扩展`Cell`框架。
+
+* [func draw(withExpansionFrame: NSRect, in: NSView)](./1528566-draw.md)
+
+    指示接收器在扩展框架中绘制。
 
 ### 用户界面布局方向
 
-* [var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection]()
-The layout direction of the user interface.
+* [var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection](./1529213-userinterfacelayoutdirection.md)
+
+    用户界面的布局方向。
 
 ### 常量
 
@@ -403,8 +420,9 @@ Constants for specifying what happens when a button is pressed or is displaying 
 * [enum NSControlTint]()
 Constants for specifying a cell’s tint color.
 
-* [enum NSControl.ControlSize]()
-Constants for specifying a cell’s size.
+* [enum NSControl.ControlSize](./ControlSize/)
+
+    用于指定`Cell`大小的常量。
 
 * [struct NSCell.HitResult]()
 Constants used by the 

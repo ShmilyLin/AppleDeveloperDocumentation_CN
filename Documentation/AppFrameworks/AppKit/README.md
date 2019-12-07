@@ -42,7 +42,7 @@ AppKit包含一个macOS应用中所有你需要实现的用户界面的对象—
 
 使用`Continuity Camera`将使用用户的iPhone，iPad或iPod touch拍摄的扫描文档和图片合并到Mac应用程序中。
 
-* [`视图(View)`和`控制器(Control)`](./UserInterface/ViewsAndControls/ViewsAndControls.md)
+* [`视图(View)`和`控制器(Control)`](./UserInterface/ViewsAndControls/)
 
 在屏幕上显示你的内容并定义这些内容的交互。
 
