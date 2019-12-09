@@ -54,3 +54,22 @@ Listing 1  Drawing a focus ring just inside a cell's bounds
 ```
 
 ## 在`Cell`内放置图像
+
+如果`Cell`显示的是图像而不是文本（或除文本之外也显示图像），则可以通过覆盖[imageRectForBounds:]()方法来影响图像在`Cell`中的放置，该方法由`NSCell`和`NSMenuItemCell`类都声明。此方法返回绘制`Cell`图像的矩形，通常是一个稍微偏离`Cell`边界的矩形。例2给出了一个示例。
+
+> **注意：** 此技术要求你将`Cell`类子类化。有关信息，请参见[“对NSCell进行子类化”]()。
+
+**例2** 将图像居中放置在`Cell`中
+```Objective-C
+- (NSRect) imageRectForBounds:(NSRect)theBounds {
+    NSRect r = theBounds;
+    // get size. If no image, result of method returning NSSize is undefined so assume NSZeroSize
+    NSSize imageSize = [self image] != nil ? [[self image] size] : NSZeroSize;
+    r.origin.x = floor((r.size.width/2)  - (imageSize.width/2)  + 0.5);
+    r.origin.y = floor((r.size.height/2) - (imageSize.height/2) + 0.5);
+    r.size     = imageSize;
+    return r;
+}
+```
+
+在此示例中，`Cell`将图像居中。请注意，它会将返回值四舍五入到最接近的像素，以避免使用部分像素偏移可能导致的绘图模糊。该代码还将返回的矩形的`size`字段设置为图像的大小，以便在矩形中正确绘制（假设`NSImage`对象使用[drawInRect:fromRect:operation:fraction:]()进行绘制，而不使用[compositeToPoint:operation:]()）。

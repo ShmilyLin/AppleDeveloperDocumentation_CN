@@ -16,5 +16,5 @@ func drawingRect(forBounds rect: NSRect) -> NSRect
 
 ## 返回值
 
-接收者绘制自己的矩形。此矩形从·theRect·中的矩形有略有偏移。
+接收者绘制自己的矩形。此矩形从`theRect`中的矩形有略有偏移。
 
