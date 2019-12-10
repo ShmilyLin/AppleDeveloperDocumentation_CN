@@ -18,365 +18,421 @@ class CALayer : NSObject
 
 ### 创建一个`Layer`
 
-init()
-Returns an initialized CALayer object.
+* [init()](./1410835-init.md)
 
-init(layer: Any)
-Override to copy or initialize custom fields of the specified layer.
+    返回一个初始化完成的`CALayer`对象。
 
-init(remoteClientId: UInt32)
-Initializes a layer with a remote client ID.
+* [init(layer: Any)]()
+
+    重写以复制或自定义初始化指定层的字段。
+
+* [init(remoteClientId: UInt32)]()
+
+    使用远程客户端ID初始化层。
 
 ### 访问相关的`Layer`对象
 
-func presentation() -> Self?
-Returns a copy of the presentation layer object that represents the state of the layer as it currently appears onscreen.
+* [func presentation() -> Self?]()
 
-func model() -> Self
-Returns the model layer object associated with the receiver, if any.
+    返回表示层对象的副本，该对象表示当前在屏幕上显示的`Layer`的状态。
+
+* [func model() -> Self]()
+
+    返回与接收器关联的模型层对象（如果有）。
 
 ### 访问`Delegate`
 
-var delegate: CALayerDelegate?
-The layer’s delegate object.
+* [var delegate: CALayerDelegate?]()
+
+    `Layer`的`Delegate`对象。
 
 ### 提供`Layer`的内容
 
-var contents: Any?
-An object that provides the contents of the layer. Animatable.
+* [var contents: Any?]()
 
-var contentsRect: CGRect
-The rectangle, in the unit coordinate space, that defines the portion of the layer’s contents that should be used. Animatable.
+    提供`Layer`内容的对象。可设置动画。
 
-var contentsCenter: CGRect
-The rectangle that defines how the layer contents are scaled if the layer’s contents are resized. Animatable.
+* [var contentsRect: CGRect]()
 
-func display()
-Reloads the content of this layer.
+    单位坐标空间中的矩形，用于定义应使用的`Layer`内容部分。可设置动画。
 
-func draw(in: CGContext)
-Draws the layer’s content using the specified graphics context.
+* [var contentsCenter: CGRect]()
+
+    矩形，用于定义在调整`Layer`内容大小时如何缩放`Layer`内容。可设置动画。
+
+* [func display()](./1410926-display.md)
+
+    重新加载该`Layer`的内容。
+
+* [func draw(in: CGContext)]()
+
+    使用指定的图形上下文绘制`Layer`的内容。
 
 ### 更改`Layer`的显示
 
-var contentsGravity: CALayerContentsGravity
-A constant that specifies how the layer's contents are positioned or scaled within its bounds.
+* [var contentsGravity: CALayerContentsGravity]()
 
-Contents Gravity Values
-The contents gravity constants specify the position of the content object when the layer bounds is larger than the bounds of the content object. They are used by the 
-contentsGravity
- property.
+    一个常数，指定`Layer`内容如何在其边界内定位或缩放。
 
-var opacity: Float
-The opacity of the receiver. Animatable.
+* [Contents Gravity Values]()
 
-var isHidden: Bool
-A Boolean indicating whether the layer is displayed. Animatable.
+    当`Layer`边界大于内容对象的边界时，内容重力常数指定内容对象的位置。它们由[contentsGravity]()属性使用。
 
-var masksToBounds: Bool
-A Boolean indicating whether sublayers are clipped to the layer’s bounds. Animatable.
+* [var opacity: Float]()
 
-var mask: CALayer?
-An optional layer whose alpha channel is used to mask the layer’s content.
+    接收者的不透明度。可设置动画。
 
-var isDoubleSided: Bool
-A Boolean indicating whether the layer displays its content when facing away from the viewer. Animatable.
+* [var isHidden: Bool]()
 
-var cornerRadius: CGFloat
-The radius to use when drawing rounded corners for the layer’s background. Animatable.
+    指示是否显示`Layer`的布尔值。可设置动画。
 
-var maskedCorners: CACornerMask
-struct CACornerMask
-var borderWidth: CGFloat
-The width of the layer’s border. Animatable.
+* [var masksToBounds: Bool]()
 
-var borderColor: CGColor?
-The color of the layer’s border. Animatable.
+    一个布尔值，指示是否将子层裁剪到该`Layer`的边界（即，超出`Layer`边界不显示）。可设置动画。
 
-var backgroundColor: CGColor?
-The background color of the receiver. Animatable.
+* [var mask: CALayer?]()
 
-var shadowOpacity: Float
-The opacity of the layer’s shadow. Animatable.
+    可选图层，其Alpha通道用于掩盖`Layer`的内容。
 
-var shadowRadius: CGFloat
-The blur radius (in points) used to render the layer’s shadow. Animatable.
+* [var isDoubleSided: Bool]()
 
-var shadowOffset: CGSize
-The offset (in points) of the layer’s shadow. Animatable.
+    一个布尔值，指示当背离查看器时，`Layer`是否显示其内容。可设置动画。
 
-var shadowColor: CGColor?
-The color of the layer’s shadow. Animatable.
+* [var cornerRadius: CGFloat]()
 
-var shadowPath: CGPath?
-The shape of the layer’s shadow. Animatable.
+    绘制图层背景的圆角时使用的半径。可设置动画。
 
-var style: [AnyHashable : Any]?
-An optional dictionary used to store property values that aren't explicitly defined by the layer.
+* [var maskedCorners: CACornerMask]()
 
-var allowsEdgeAntialiasing: Bool
-A Boolean indicating whether the layer is allowed to perform edge antialiasing.
+* [struct CACornerMask]()
 
-var allowsGroupOpacity: Bool
-A Boolean indicating whether the layer is allowed to composite itself as a group separate from its parent.
+* [var borderWidth: CGFloat]()
+
+    `Layer`边框的宽度。可设置动画。
+
+* [var borderColor: CGColor?]()
+
+    `Layer`边框的颜色。可设置动画。
+
+* [var backgroundColor: CGColor?]()
+
+    接收器的背景颜色。可设置动画。
+
+* [var shadowOpacity: Float]()
+
+    `Layer`阴影的不透明度。可设置动画。
+
+* [var shadowRadius: CGFloat]()
+
+    用于渲染`Layer`阴影的模糊半径（以点为单位）。可设置动画。
+
+* [var shadowOffset: CGSize]()
+
+    `Layer`阴影的偏移量（以点为单位）。可设置动画。
+
+* [var shadowColor: CGColor?]()
+
+    `Layer`阴影的颜色。可设置动画。
+
+* [var shadowPath: CGPath?]()
+
+    `Layer`阴影的形状。可设置动画。
+
+* [var style: [AnyHashable : Any]?]()
+
+    可选字典，用于存储未由`Layer`明确定义的属性值。
+
+* [var allowsEdgeAntialiasing: Bool]()
+
+    一个布尔值，指示是否允许该`Layer`执行边缘抗锯齿。
+
+* [var allowsGroupOpacity: Bool]()
+
+    一个布尔值，指示是否允许该`Layer`将其自身作为与其父级分开的组进行组合。
 
 ### `Layer`过滤器
 
-var filters: [Any]?
+* [var filters: [Any]?
 An array of Core Image filters to apply to the contents of the layer and its sublayers. Animatable.
 
-var compositingFilter: Any?
+* [var compositingFilter: Any?
 A CoreImage filter used to composite the layer and the content behind it. Animatable.
 
-var backgroundFilters: [Any]?
+* [var backgroundFilters: [Any]?
 An array of Core Image filters to apply to the content immediately behind the layer. Animatable.
 
-var minificationFilter: CALayerContentsFilter
+* [var minificationFilter: CALayerContentsFilter
 The filter used when reducing the size of the content.
 
-var minificationFilterBias: Float
+* [var minificationFilterBias: Float
 The bias factor used by the minification filter to determine the levels of detail.
 
-var magnificationFilter: CALayerContentsFilter
+* [var magnificationFilter: CALayerContentsFilter
 The filter used when increasing the size of the content.
 
 ### 配置`Layer`渲染行为
 
-var isOpaque: Bool
-A Boolean value indicating whether the layer contains completely opaque content.
+* [var isOpaque: Bool]()
 
-var edgeAntialiasingMask: CAEdgeAntialiasingMask
-A bitmask defining how the edges of the receiver are rasterized.
+    一个布尔值，指示该`Layer`是否包含完全不透明的内容。
 
-func contentsAreFlipped() -> Bool
-Returns a Boolean indicating whether the layer content is implicitly flipped when rendered.
+* [var edgeAntialiasingMask: CAEdgeAntialiasingMask]()
 
-var isGeometryFlipped: Bool
-A Boolean that indicates whether the geometry of the layer and its sublayers is flipped vertically.
+    定义如何光栅化接收器边缘的位掩码。
 
-var drawsAsynchronously: Bool
-A Boolean indicating whether drawing commands are deferred and processed asynchronously in a background thread.
+* [func contentsAreFlipped() -> Bool]()
 
-var shouldRasterize: Bool
-A Boolean that indicates whether the layer is rendered as a bitmap before compositing. Animatable
+    返回一个布尔值，指示在渲染时是否隐式翻转`Layer`内容。
 
-var rasterizationScale: CGFloat
-The scale at which to rasterize content, relative to the coordinate space of the layer. Animatable
+* [var isGeometryFlipped: Bool]()
 
-var contentsFormat: CALayerContentsFormat
-A hint for the desired storage format of the layer contents.
+    一个布尔值，指示该`Layer`及其子层的几何形状是否垂直翻转。
 
-func render(in: CGContext)
-Renders the layer and its sublayers into the specified context.
+* [var drawsAsynchronously: Bool]()
+
+    一个布尔值，指示是否在后台线程中延迟和异步处理绘图命令。
+
+* [var shouldRasterize: Bool]()
+
+    一个布尔值，指示在合成之前是否将`Layer`渲染为位图。可设置动画。
+
+* [var rasterizationScale: CGFloat]()
+
+    相对于`Layer`的坐标空间栅格化内容的比例。可设置动画。
+
+* [var contentsFormat: CALayerContentsFormat]()
+
+    有关所需的`Layer`内容存储格式的提示。
+
+* [func render(in: CGContext)]()
+
+    将`Layer`及其`Sublayer`渲染到指定的上下文中。
 
 ### 修改`Layer`几何形状
 
-var frame: CGRect
-The layer’s frame rectangle.
+* [var frame: CGRect]()
 
-var bounds: CGRect
-The layer’s bounds rectangle. Animatable.
+    `Layer`的框架矩形。
 
-var position: CGPoint
-The layer’s position in its superlayer’s coordinate space. Animatable.
+* [var bounds: CGRect]()
 
-var zPosition: CGFloat
-The layer’s position on the z axis. Animatable.
+    `Layer`的边界矩形。可设置动画。
 
-var anchorPointZ: CGFloat
-The anchor point for the layer’s position along the z axis. Animatable.
+* [var position: CGPoint]()
 
-var anchorPoint: CGPoint
-Defines the anchor point of the layer's bounds rectangle. Animatable.
+    `Layer`在其上层坐标空间中的位置。可设置动画。
 
-var contentsScale: CGFloat
-The scale factor applied to the layer.
+* [var zPosition: CGFloat]()
+
+    `Layer`在z轴上的位置。可设置动画。
+
+* [var anchorPointZ: CGFloat]()
+
+    `Layer`沿z轴位置的锚点。可设置动画。
+
+* [var anchorPoint: CGPoint]()
+
+    定义`Layer`边界矩形的锚点。可设置动画。
+
+* [var contentsScale: CGFloat]()
+
+    应用于`Layer`的比例因子。
 
 ### 管理`Layer`的变换
 
-var transform: CATransform3D
+* [var transform: CATransform3D
 The transform applied to the layer’s contents. Animatable.
 
-var sublayerTransform: CATransform3D
+* [var sublayerTransform: CATransform3D
 Specifies the transform to apply to sublayers when rendering. Animatable.
 
-func affineTransform() -> CGAffineTransform
+* [func affineTransform() -> CGAffineTransform
 Returns an affine version of the layer’s transform.
 
-func setAffineTransform(CGAffineTransform)
+* [func setAffineTransform(CGAffineTransform)
 Sets the layer’s transform to the specified affine transform.
 
 ### 管理`Layer`层次结构
 
-var sublayers: [CALayer]?
-An array containing the layer’s sublayers.
+* [var sublayers: [CALayer]?]()
 
-var superlayer: CALayer?
-The superlayer of the layer.
+    包含`Layer`的`Sublayer`的数组。
 
-func addSublayer(CALayer)
-Appends the layer to the layer’s list of sublayers.
+* [var superlayer: CALayer?]()
 
-func removeFromSuperlayer()
-Detaches the layer from its parent layer.
+    `Layer`的`Superlayer`。
 
-func insertSublayer(CALayer, at: UInt32)
+* [func addSublayer(CALayer)]()
+
+    将`Layer`添加到`Layer`的`Sublayer`列表中。
+
+* [func removeFromSuperlayer()]()
+
+    将`Layer`从其`Superlayer`中分离。
+
+* [func insertSublayer(CALayer, at: UInt32)]()
 Inserts the specified layer into the receiver’s list of sublayers at the specified index.
 
-func insertSublayer(CALayer, below: CALayer?)
+* [func insertSublayer(CALayer, below: CALayer?)]()
 Inserts the specified sublayer below a different sublayer that already belongs to the receiver.
 
-func insertSublayer(CALayer, above: CALayer?)
+* [func insertSublayer(CALayer, above: CALayer?)]()
 Inserts the specified sublayer above a different sublayer that already belongs to the receiver.
 
-func replaceSublayer(CALayer, with: CALayer)
+* [func replaceSublayer(CALayer, with: CALayer)]()
 Replaces the specified sublayer with a different layer object.
 
 ### 更新`Layer`的显示
 
-func setNeedsDisplay()
-Marks the layer’s contents as needing to be updated.
+* [func setNeedsDisplay()](./1410855-setneedsdisplay.md)
 
-func setNeedsDisplay(CGRect)
-Marks the region within the specified rectangle as needing to be updated.
+    将`Layer`的内容标记为需要更新。
 
-var needsDisplayOnBoundsChange: Bool
-A Boolean indicating whether the layer contents must be updated when its bounds rectangle changes.
+* [func setNeedsDisplay(CGRect)]()
 
-func displayIfNeeded()
-Initiates the update process for a layer if it is currently marked as needing an update.
+    将指定矩形内的区域标记为需要更新。
 
-func needsDisplay() -> Bool
-Returns a Boolean indicating whether the layer has been marked as needing an update.
+* [var needsDisplayOnBoundsChange: Bool]()
 
-class func needsDisplay(forKey: String) -> Bool
-Returns a Boolean indicating whether changes to the specified key require the layer to be redisplayed.
+    一个布尔值，指示当其边界矩形更改时是否必须更新图层内容。
+
+* [func displayIfNeeded()](./1410813-displayifneeded.md)
+
+    如果`Layer`当前被标记为需要更新，则启动该`Layer`的更新过程。
+
+* [func needsDisplay() -> Bool](./1410958-needsdisplay.md)
+
+    返回一个布尔值，指示该`Layer`是否已标记为需要更新。
+
+* [class func needsDisplay(forKey: String) -> Bool]()
+
+    返回一个布尔值，指示对指定键的更改是否需要重新显示该`Layer`。
 
 ### `Layer`动画
 
-func add(CAAnimation, forKey: String?)
+* [func add(CAAnimation, forKey: String?)
 Add the specified animation object to the layer’s render tree.
 
-func animation(forKey: String) -> CAAnimation?
+* [func animation(forKey: String) -> CAAnimation?
 Returns the animation object with the specified identifier.
 
-func removeAllAnimations()
+* [func removeAllAnimations()
 Remove all animations attached to the layer.
 
-func removeAnimation(forKey: String)
+* [func removeAnimation(forKey: String)
 Remove the animation object with the specified key.
 
-func animationKeys() -> [String]?
+* [func animationKeys() -> [String]?
 Returns an array of strings that identify the animations currently attached to the layer.
 
 ### 管理`Layer`大小调整和布局
 
-var layoutManager: CALayoutManager?
+* [var layoutManager: CALayoutManager?
 The object responsible for laying out the layer’s sublayers.
 
-func setNeedsLayout()
+* [func setNeedsLayout()
 Invalidates the layer’s layout and marks it as needing an update.
 
-func layoutSublayers()
+* [func layoutSublayers()
 Tells the layer to update its layout.
 
-func layoutIfNeeded()
+* [func layoutIfNeeded()
 Recalculate the receiver’s layout, if required.
 
-func needsLayout() -> Bool
+* [func needsLayout() -> Bool
 Returns a Boolean indicating whether the layer has been marked as needing a layout update.
 
-var autoresizingMask: CAAutoresizingMask
+* [var autoresizingMask: CAAutoresizingMask
 A bitmask defining how the layer is resized when the bounds of its superlayer changes.
 
-func resize(withOldSuperlayerSize: CGSize)
+* [func resize(withOldSuperlayerSize: CGSize)
 Informs the receiver that the size of its superlayer changed.
 
-func resizeSublayers(withOldSize: CGSize)
+* [func resizeSublayers(withOldSize: CGSize)
 Informs the receiver’s sublayers that the receiver’s size has changed.
 
-func preferredFrameSize() -> CGSize
+* [func preferredFrameSize() -> CGSize
 Returns the preferred size of the layer in the coordinate space of its superlayer.
 
 ### 管理`Layer`约束
 
-var constraints: [CAConstraint]?
+* [var constraints: [CAConstraint]?
 The constraints used to position current layer’s sublayers.
 
-func addConstraint(CAConstraint)
+* [func addConstraint(CAConstraint)
 Adds the specified constraint to the layer.
 
 ### 获取`Layer`的动作
 
-func action(forKey: String) -> CAAction?
+* [func action(forKey: String) -> CAAction?
 Returns the action object assigned to the specified key.
 
-var actions: [String : CAAction]?
+* [var actions: [String : CAAction]?
 A dictionary containing layer actions.
 
-class func defaultAction(forKey: String) -> CAAction?
+* [class func defaultAction(forKey: String) -> CAAction?
 Returns the default action for the current class.
 
 ### 坐标和时空之间的映射
 
-func convert(CGPoint, from: CALayer?) -> CGPoint
+* [func convert(CGPoint, from: CALayer?) -> CGPoint
 Converts the point from the specified layer’s coordinate system to the receiver’s coordinate system.
 
-func convert(CGPoint, to: CALayer?) -> CGPoint
+* [func convert(CGPoint, to: CALayer?) -> CGPoint
 Converts the point from the receiver’s coordinate system to the specified layer’s coordinate system.
 
-func convert(CGRect, from: CALayer?) -> CGRect
+* [func convert(CGRect, from: CALayer?) -> CGRect
 Converts the rectangle from the specified layer’s coordinate system to the receiver’s coordinate system.
 
-func convert(CGRect, to: CALayer?) -> CGRect
+* [func convert(CGRect, to: CALayer?) -> CGRect
 Converts the rectangle from the receiver’s coordinate system to the specified layer’s coordinate system.
 
-func convertTime(CFTimeInterval, from: CALayer?) -> CFTimeInterval
+* [func convertTime(CFTimeInterval, from: CALayer?) -> CFTimeInterval
 Converts the time interval from the specified layer’s time space to the receiver’s time space.
 
-func convertTime(CFTimeInterval, to: CALayer?) -> CFTimeInterval
+* [func convertTime(CFTimeInterval, to: CALayer?) -> CFTimeInterval
 Converts the time interval from the receiver’s time space to the specified layer’s time space
 
 ### 命中测试
 
-func hitTest(CGPoint) -> CALayer?
+* [func hitTest(CGPoint) -> CALayer?
 Returns the farthest descendant of the receiver in the layer hierarchy (including itself) that contains the specified point.
 
-func contains(CGPoint) -> Bool
+* [func contains(CGPoint) -> Bool
 Returns whether the receiver contains a specified point.
 
 ### 滚动
 
-var visibleRect: CGRect
+* [var visibleRect: CGRect
 The visible region of the layer in its own coordinate space.
 
-func scroll(CGPoint)
+* [func scroll(CGPoint)
 Initiates a scroll in the layer’s closest ancestor scroll layer so that the specified point lies at the origin of the scroll layer.
 
-func scrollRectToVisible(CGRect)
+* [func scrollRectToVisible(CGRect)
 Initiates a scroll in the layer’s closest ancestor scroll layer so that the specified rectangle becomes visible.
 
 ### `Layer`的标识
 
-var name: String?
+* [var name: String?
 The name of the receiver.
 
 ### 键值编码扩展
 
-func shouldArchiveValue(forKey: String) -> Bool
+* [func shouldArchiveValue(forKey: String) -> Bool
 Returns a Boolean indicating whether the value of the specified key should be archived.
 
-class func defaultValue(forKey: String) -> Any?
+* [class func defaultValue(forKey: String) -> Any?
 Specifies the default value associated with the specified key.
 
 ### 常量
 
-struct CAAutoresizingMask
+* [struct CAAutoresizingMask
 These constants are used by the 
 autoresizingMask
  property.
 
-Action Identifiers
+* [Action Identifiers
 These constants are the predefined action identifiers used by 
 action(forKey:)
 , 
@@ -391,28 +447,28 @@ CAAction
 run(forKey:object:arguments:)
 .
 
-struct CAEdgeAntialiasingMask
+* [struct CAEdgeAntialiasingMask
 This mask is used by the 
 edgeAntialiasingMask
  property.
 
-Identity Transform
+* [Identity Transform
 Defines the identity transform matrix used by Core Animation.
 
-Scaling Filters
+* [Scaling Filters
 These constants specify the scaling filters used by 
 magnificationFilter
  and 
 minificationFilter
 .
 
-struct CATransform3D
+* [struct CATransform3D
 The standard transform matrix used throughout Core Animation.
 
 ### 实例属性
 
-var cornerCurve: CALayerCornerCurve
+* [var cornerCurve: CALayerCornerCurve
 
 ### 类方法
 
-class func cornerCurveExpansionFactor(CALayerCornerCurve) -> CGFloat
+* [class func cornerCurveExpansionFactor(CALayerCornerCurve) -> CGFloat

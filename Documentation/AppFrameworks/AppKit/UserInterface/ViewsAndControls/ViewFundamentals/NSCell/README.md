@@ -128,8 +128,9 @@ A Boolean value indicating whether excess text scrolls past the cell’s bounds.
 * [var alignment: NSTextAlignment]()
 The alignment of the cell’s text.
 
-* [var font: NSFont?]()
-The font that the cell uses to display text.
+* [var font: NSFont?](./1526710-font.md)
+
+    `Cell`用于显示文本的字体。
 
 * [var lineBreakMode: NSLineBreakMode]()
 The line break mode to use when drawing text in the cell.

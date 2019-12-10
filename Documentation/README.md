@@ -20,7 +20,7 @@
 - [ARKit]
 - [ColorSync]
 - [Core Animation](./GraphicsAndGames/CoreAnimation/)
-- [Core Graphics]
+- [Core Graphics](./GraphicsAndGames/CoreGraphics/)
 - [Core Image](./GraphicsAndGames/CoreImage/)
 - [Game Controller]
 - [GameKit]

@@ -4,7 +4,7 @@
 
 ## 概述
 
-`Core Animation`可提供高帧率和流畅的动画，而不会给CPU造成负担，也不会降低App的运行速度。绘制动画的每一帧所需的大部分工作都已经帮你完成。你可以配置动画参数（例如起点和终点），然后由`Core Animation`完成其余的工作，将大部分工作移交给专用图形硬件，以加快渲染速度。有关更多详细信息，请参见[Core Animation编程指南]()。
+`Core Animation`可提供高帧率和流畅的动画，而不会给CPU造成负担，也不会降低App的运行速度。绘制动画的每一帧所需的大部分工作都已经帮你完成。你可以配置动画参数（例如起点和终点），然后由`Core Animation`完成其余的工作，将大部分工作移交给专用图形硬件，以加快渲染速度。有关更多详细信息，请参见[Core Animation编程指南](../../../DocumentationArchive/CoreAnimationProgrammingGuide/)。
 
 ## 主题
 
