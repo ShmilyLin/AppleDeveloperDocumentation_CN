@@ -8,11 +8,11 @@
 
 ### Views
 
-#### [class NSTableView]
+* [class NSTableView](./NSTableView/)
 
-A set of related records, displayed in rows that represent individual records and columns that represent the attributes of those records. 
+一组相关记录，显示在代表各个记录的行中和代表这些记录的属性的列中。
 
-#### [class NSTableCellView]
+* [class NSTableCellView](./NSTableCellView/)
 
 A reusable container view shown for a particular cell in a table view that uses rows for content.
 
