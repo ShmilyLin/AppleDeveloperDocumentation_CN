@@ -156,25 +156,27 @@ The index of the row the user clicked.
 
     用于绘制网格线的颜色。
 
-* [var gridStyleMask: NSTableView.GridLineStyle]()
+* [var gridStyleMask: NSTableView.GridLineStyle](./1528689-gridstylemask.md)
 
     `表格视图`绘制的网格线。
 
-* [func indicatorImage(in: NSTableColumn) -> NSImage?]()
+* [func indicatorImage(in: NSTableColumn) -> NSImage?](./1524846-indicatorimage.md)
 
-    返回指定`列`的指标图像。
+    返回指定`列`的指示符图像。
 
-* [func setIndicatorImage(NSImage?, in: NSTableColumn)]()
+* [func setIndicatorImage(NSImage?, in: NSTableColumn)](./1534381-setindicatorimage.md)
 
-    设置指定`列`的指标图像。
+    设置指定`列`的指示符图像。
 
 ### 获取和设置行尺寸的样式
 
-* [var effectiveRowSizeStyle: NSTableView.RowSizeStyle]()
-The effective row size style for the table.
+* [var effectiveRowSizeStyle: NSTableView.RowSizeStyle](./1531825-effectiverowsizestyle.md)
 
-* [var rowSizeStyle: NSTableView.RowSizeStyle]()
-The row size style (small, medium, large, or custom) used by the table view.
+    表格的有效`行`的大小样式。
+
+* [var rowSizeStyle: NSTableView.RowSizeStyle](./1534438-rowsizestyle.md)
+
+    `表格视图`使用的`行`的大小样式（小，中，大或自定义）。
 
 ### 管理列
 
@@ -247,16 +249,19 @@ Allows the enumeration of all the table rows that are known to the table view.
 
 ### 管理类型选择
 
-* [var allowsTypeSelect: Bool]()
-A Boolean value indicating whether the table view allows the user to type characters to select rows.
+* [var allowsTypeSelect: Bool](./1526084-allowstypeselect.md)
+
+    一个布尔值，指示`表格视图`是否允许用户键入字符以选择行。
 
 ### 表格纬度
 
-* [var numberOfColumns: Int]()
-The number of columns in the table.
+* [var numberOfColumns: Int](./1528902-numberofcolumns.md)
 
-* [var numberOfRows: Int]()
-The number of rows in the table.
+    表格的列数。
+
+* [var numberOfRows: Int](./1527941-numberofrows.md)
+
+    表格的行数。
 
 ### 获取和设置浮动行
 
